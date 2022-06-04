@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id</title>
+    <script>
+        nome = prompt("Qual é o seu nome?");
+        ano_nascimento = prompt("Qual o ano que vc nasceu? ");
+        let ano = new Date().getFullYear();
+        retorno = ano - ano_nascimento;
+
+        function dataAtual() {
+            let dia = new Date();
+                diatual = dia.getDate().toString();
+                diaF = (dia.lenght ==1) ? '0' + diatual : diatual;
+                mes = (dia.getMonth() +1).toString();
+                mesF = (mes.lenght ==1) ? '0' + mes : mes;
+                ano = dia.getFullYear();
+            return diaF + "/" + mesF + "/" + ano;
+        }
+        alert("Osasco, "+dataAtual()+ " Seu nome é: " +  nome + " Sua idade é: " + retorno);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
